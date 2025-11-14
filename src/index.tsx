@@ -8,6 +8,8 @@ import "./Pwa"
 
 function App()
 {
+	Notification.requestPermission();
+	
 	let [ renderCount, setRenderCount ] = useState( 1 );
 	console.log( "App render count: " + renderCount );
 	useEffect( () =>
